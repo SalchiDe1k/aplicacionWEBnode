@@ -1,0 +1,58 @@
+/* Estilos para la barra de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    .navbar ul {
+        text-align: center;
+    }
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para la sección de descripción en dispositivos móviles */
+@media (max-width: 768px) {
+    .descripcion {
+        padding: 40px;
+    }
+    .descripcion h2 {
+        font-size: 20px;
+    }
+    .descripcion p {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para la sección de galería en dispositivos móviles */
+@media (max-width: 768px) {
+    .galeria {
+        width: 100%;
+    }
+    .img-c {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para la sección de contacto en dispositivos móviles */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 20px;
+    }
+    .contacto h2 {
+        font-size: 20px;
+    }
+    .contacto p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+}
+
+/* Estilos para el mapa de Google en dispositivos móviles */
+@media (max-width: 768px) {
+    #map {
+        height: 200px;
+    }
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Barlow+Condensed:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Arvo";
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgb(193, 255, 132), rgb(98, 174, 70)), url('');
+    background-size: cover;
+    background-position: center;
+}
