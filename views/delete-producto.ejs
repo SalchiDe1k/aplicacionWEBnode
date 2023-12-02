@@ -1,0 +1,23 @@
+<!-- delete-producto.ejs -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Producto</title>
+    <!-- Agrega aquí tus enlaces a CSS o scripts si es necesario -->
+</head>
+<body>
+    <h1>Eliminar Producto</h1>
+    
+    <p>¿Estás seguro de que deseas eliminar el producto "<%= producto.productname %>"?</p>
+    
+    <!-- Formulario para confirmar la eliminación -->
+    <form action="/admin/productos/<%= producto.id %>/delete" method="post">
+        <button type="submit">Eliminar Producto</button>
+        <a href="/admin/productos">Cancelar</a>
+    </form>
+
+</body>
+</html>

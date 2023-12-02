@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 10px 0;
+        }
+
+        /* Puedes agregar estilos adicionales según sea necesario */
+    </style>
+</head>
+<body>
+    <h1>Listado de Productos</h1>
+    <ul>
+        <% productos.forEach(producto => { %>
+            <li>
+                <strong>Código de Producto:</strong> <%= producto.productcode %><br>
+                <strong>Nombre del Producto:</strong> <%= producto.productname %><br>
+                <strong>Precio de Costo:</strong> <%= producto.costprice %><br>
+                <strong>Precio de Venta:</strong> <%= producto.sellprice %><br>
+                <strong>Marca:</strong> <%= producto.brand %><br>
+                <!-- Puedes agregar más detalles del producto aquí -->
+            </li>
+            <hr>
+        <% }); %>
+    </ul>
+</body>
+</html>
